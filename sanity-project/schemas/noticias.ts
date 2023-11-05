@@ -23,5 +23,10 @@ export default {
       type: 'string',
       title: 'Categoria',
     },
+    {
+      name: 'image',
+      type: 'string',
+      title: 'Imagen',
+    },
   ],
 }
