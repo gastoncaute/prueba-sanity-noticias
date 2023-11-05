@@ -28,5 +28,15 @@ export default {
       type: 'string',
       title: 'Imagen',
     },
+    {
+      name: 'TwitterID',
+      type: 'string',
+      title: 'ID de Twitter',
+    },
+    {
+      name: 'YouTubeCode',
+      type: 'string',
+      title: 'Video de YouTube',
+    },
   ],
 }
