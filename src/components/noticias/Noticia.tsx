@@ -12,7 +12,7 @@ interface INoticia {
 
 async function getData() {
   const query = `*[_type == 'noticias']`;
-  const data = await client.fetch(query);
+  const data = await client.fetch(query, { cachePolicy: "no-cache" });
   return data as INoticia[];
 }
 
@@ -24,7 +24,10 @@ const Noticia = async () => {
       <h1>Noticia</h1>
       <div>
         {data.map((item) => (
-          <div className="border border-black rounded-xl m-4 p-4" key={item._id}>
+          <div
+            className="border border-black rounded-xl m-4 p-4"
+            key={item._id}
+          >
             <h1>
               <span>{item.title}</span>
             </h1>
