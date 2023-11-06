@@ -24,7 +24,7 @@ const Noticia = async () => {
       <h1>Noticia</h1>
       <div>
         {data.map((item) => (
-          <div key={item._id}>
+          <div className="border border-black rounded-xl m-4 p-4" key={item._id}>
             <h1>
               <span>{item.title}</span>
             </h1>
